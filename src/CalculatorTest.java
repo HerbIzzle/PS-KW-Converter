@@ -1,10 +1,5 @@
-package Testing;
-
-import Exceptions.InvalidNumberException;
+import Exceptions.*;
 import org.junit.jupiter.api.Test;
-import Application.*;
-
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {

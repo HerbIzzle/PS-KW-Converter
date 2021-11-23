@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="467cc963-99e7-4ffd-933a-85faeefe4af3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidCharacterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/InvalidNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PS_KW_Rechner_KNAF_SWT/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PS_KW_Rechner_KNAF_SWT/CalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PS_KW_Rechner_KNAF_SWT/TestException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PS_KW_Rechner_KNAF_SWT/UnitConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnitConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnitConverter.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="212otMSaoLkxfycX7DTaNypNwjt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Application.Calculator">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Calculator" />
+      <module name="PS_KW_Rechner_KNAF_SWT" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testForExcessiveInputValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PS_KW_Rechner_KNAF_SWT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="testForExcessiveInputValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testForNegativeInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PS_KW_Rechner_KNAF_SWT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="testForNegativeInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testForRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PS_KW_Rechner_KNAF_SWT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="testForRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testRegexWhitelistValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PS_KW_Rechner_KNAF_SWT" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculatorTest" />
+      <option name="METHOD_NAME" value="testRegexWhitelistValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Calculator" />
+        <item itemvalue="JUnit.CalculatorTest.testRegexWhitelistValidation" />
+        <item itemvalue="JUnit.CalculatorTest.testForNegativeInput" />
+        <item itemvalue="JUnit.CalculatorTest.testForRandom" />
+        <item itemvalue="JUnit.CalculatorTest.testForExcessiveInputValue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="467cc963-99e7-4ffd-933a-85faeefe4af3" name="Default Changelist" comment="" />
+      <created>1637148760301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637148760301</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="345" y="97" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1637242750907">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="345" y="97" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1280.680@0.0.1280.680" timestamp="1637242750907" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1637686531535">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1637686531535" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1637228563187" />
+    <state width="1237" height="187" key="GridCell.Tab.0.bottom" timestamp="1637687827238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="187" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1637687827238" />
+    <state width="1237" height="187" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1637684412521" />
+    <state width="1237" height="187" key="GridCell.Tab.0.center" timestamp="1637687827238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="187" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1637687827238" />
+    <state width="1237" height="187" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1637684412521" />
+    <state width="1237" height="187" key="GridCell.Tab.0.left" timestamp="1637687827238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="187" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1637687827238" />
+    <state width="1237" height="187" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1637684412521" />
+    <state width="1237" height="187" key="GridCell.Tab.0.right" timestamp="1637687827238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="187" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1536.824@0.0.1280.680" timestamp="1637687827238" />
+    <state width="1237" height="187" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1637684412521" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1637665756240">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1637665756240" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1637665756238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1637665756238" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1637665756238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1637665756238" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1637665756238">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1637665756238" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1637148847429">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1637148847429" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1637229730787">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1637229730787" />
+    <state x="696" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1637149966307">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="696" y="232" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1637149966307" />
+    <state x="91" y="0" key="new project wizard" timestamp="1637439289617">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1637439289617" />
+  </component>
+</project>

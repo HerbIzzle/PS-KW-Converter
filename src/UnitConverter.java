@@ -1,5 +1,3 @@
-package Application;
-
 import Exceptions.InvalidNumberException;
 
 public class UnitConverter {

@@ -1,5 +1,3 @@
-package Application;
-
 import Exceptions.InvalidCharacterException;
 
 import javax.swing.JFrame;
