@@ -1,55 +1,93 @@
+package Testing;
+
+import Exceptions.InvalidNumberException;
 import org.junit.jupiter.api.Test;
+import Application.*;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+//gueltige Aequivalenzklassen
+    // gÄK1: [0, ..., 5000]        -- Räpresentant     666
 
-    double PSmultiplier = 1.3596216173;
-    double KWmultiplier = 0.73549875;
 
-public static String test(double a, String kw, String ps){
-
-     double PSmultiplier = 1.3596216173;
-     double KWmultiplier = 0.73549875;
-
-    if ("KW" == kw && a > 0) {
-        return a + " PS sind KW :" + String.format("%.5f", a * PSmultiplier);
-    }
-
-    else if ("PS" == ps && a > 0) {
-        return a + " KW sind PS :" + String.format("%.5f", a * KWmultiplier);
-    }
-    return null;
-}
-
-public static double val(double a, String kw, String ps){
-
-    if ("KW" == kw) {
-       a *= 0.73549875;
-    }else if ("PS" == ps){
-        a *= 1.3596216173;
-}
-    return a;
-}
+//ungueltige Aequivalenzklassen
+    // uÄK1: [MIN_INT, ..., 0[     --Räpresentant     -500
+    // uÄK2: ]5000, ..., MAX_INT]  --Räpresentant   2.000.000
 
 
     @Test
-    void conversionInit() {
+    void testKwToPs() {
 
-    UnitConverter unitConverter = new UnitConverter();
+        String[] units = {"KW", "PS"};
+        double WERT = 666;
+        double EXPECTED = 905.5079971218;
+        UnitConverter converter = new UnitConverter();
+        double ACTUAL = 0;
 
-        assertEquals(200 * KWmultiplier, unitConverter.calc(200, KWmultiplier) );
-     //   assertEquals(200 * PSmultiplier, val(100, null , "PS"));
-     //   assertEquals(200 * KWmultiplier, val(100, null, null));
+
+        try {
+            ACTUAL = converter.assignUnitToCalc(units[1], WERT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        assertEquals(EXPECTED, ACTUAL);
+    }
+
+
+    @Test
+    void testPsToKw() {
+
+        String[] units = {"KW", "PS"};
+        double WERT = 666;
+        double EXPECTED = 489.84216749999996;
+        UnitConverter converter = new UnitConverter();
+        double ACTUAL = 0;
+
+
+        try {
+            ACTUAL = converter.assignUnitToCalc(units[0], WERT);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        assertEquals(EXPECTED, ACTUAL);
 
     }
 
-    /*void conversionRandom(){
 
-   double b = val(200, "KW", null);
-        java.util.Random r = new java.util.Random();
+    @Test
+    void testForNegativeInput() {
 
-    }*/
+        String[] units = {"KW", "PS"};
+        double WERT = -500;
+        String inputZeroOrLessMsg = "Der Wert ist zu klein oder 0";
+
+        try {
+            UnitConverter converter = new UnitConverter();
+            converter.assignUnitToCalc(units[0], WERT);
+            fail();
+
+        } catch (InvalidNumberException e) {
+            assertEquals(inputZeroOrLessMsg, e.getMessage());
+        }
+    }
+
+
+    @Test
+    void testForExcessiveInputValue() {
+
+        String[] units = {"KW", "PS"};
+        UnitConverter converter = new UnitConverter();
+
+        Exception e = assertThrows(InvalidNumberException.class, () -> converter.assignUnitToCalc(units[1], 2_000_000));
+
+        assertEquals("Der Wert ist zu groß", e.getMessage());
+    }
+
+
 
 }

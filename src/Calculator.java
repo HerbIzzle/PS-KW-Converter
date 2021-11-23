@@ -1,3 +1,7 @@
+package Application;
+
+import Exceptions.InvalidCharacterException;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -5,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
 import java.awt.Font;
+import java.util.regex.Pattern;
 
 
 public class Calculator extends JFrame {
@@ -12,10 +17,6 @@ public class Calculator extends JFrame {
     private JPanel contentPane;
     private JTextField intParam;
     private JComboBox boxList;
-
-    private double PSmultiplier = 1.3596216173;
-    private double KWmultiplier = 0.73549875;
-
 
     /**
      * Start der Applikation.
@@ -31,55 +32,39 @@ public class Calculator extends JFrame {
 
     }
 
-    /*
-     * Methode zur Berechnung von PS/KW
-     */
 
+   double regexWhitelistValidation(String param) throws InvalidCharacterException {
+
+    if (!Pattern.matches("[0-9.-]+", param)) {
+        throw new InvalidCharacterException("Invalid Syntax");
+    }else{
+        return Double.parseDouble(param);
+}
+   }
 
     public String calculatorInit(){
 
-
-        double userInputParam;
-
         UnitConverter unitConverter = new UnitConverter();
-
 
         try {
 
-            userInputParam = Double.parseDouble(intParam.getText());
+           String inputParam = intParam.getText();
+           double userInputParam = regexWhitelistValidation(inputParam);
 
-            Object selectedItem = boxList.getSelectedItem();
+           Object selectedItem = boxList.getSelectedItem();
 
-            if ("KW".equals(selectedItem) && userInputParam > 0 && userInputParam < 5000 ) {
+           double result = unitConverter.assignUnitToCalc(selectedItem, userInputParam);
 
-                double result = unitConverter.calc(userInputParam,KWmultiplier);
-                return userInputParam + " PS sind " + String.format("%.5f", result) + " KW";
-
-
-            } else if ("PS".equals(selectedItem) && userInputParam > 0 && userInputParam < 5000) {
-
-                double result = unitConverter.calc(userInputParam,PSmultiplier);
-                return userInputParam + " KW sind " + String.format("%.5f", result) + " PS";
-
+           return userInputParam + " sind " + String.format("%.5f", result) + " " + selectedItem.toString() ;
 
             }
 
-            if(userInputParam <= 0){
-                intParam.setText("");
-                return "Geben sie eine positive Zahl ein";
-            }
+        catch (Exception e) {
 
-            if(userInputParam > 5000){
-                intParam.setText("");
-                return "Benutzen sie eine realistische Zahl";
-            }
-
-        } catch (Exception e) {
             intParam.setText("");
-            return "Geben sie eine Zahl an!";
+            return "Geben sie einen gültigen Wert ein!";
         }
 
-        return null;
     }
 
     /**
